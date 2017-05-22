@@ -1,5 +1,5 @@
 source "http://rubygems.org"
-gem 'spree', github: 'spree/spree', branch: 'master'
+gem 'spree', '~> 3.2.1'
 gem 'sass'
 
 group :test do
