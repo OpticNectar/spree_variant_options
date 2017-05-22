@@ -22,8 +22,8 @@ module SpreeVariantOptions
       end
 
       def add_stylesheets
-        insert_into_file 'vendor/assets/stylesheets/spree/frontend/all.css', " *= require spree/frontend/spree_variant_options\n", :before => /\*\//, :verbose => true
-        insert_into_file 'vendor/assets/stylesheets/spree/backend/all.css', " *= require spree/backend/spree_variant_options\n", :before => /\*\//, :verbose => true
+        insert_into_file 'vendor/assets/stylesheets/spree/frontend/all.scss', " *= require spree/frontend/spree_variant_options\n", :before => /\*\//, :verbose => true
+        insert_into_file 'vendor/assets/stylesheets/spree/backend/all.scss', " *= require spree/backend/spree_variant_options\n", :before => /\*\//, :verbose => true
       end
 
     end
